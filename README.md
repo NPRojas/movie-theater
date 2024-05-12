@@ -55,12 +55,12 @@ Create the route handlers for the project, per these definitions:
 
 **Shows**
 
-- `GET` all shows
-- `GET` one show
-- `GET` all users who watched a show
-- `PUT` update the `available` property of a show
-- `DELETE` a show
-- `GET` shows of a particular genre (genre in `req.query`)
+- `GET` ("/") all shows
+- `GET` ("/:showId") one show
+- `GET` ("/:showId") all users who watched a show
+- `PUT` ("/:showId") update the `available` property of a show
+- `DELETE` ("/:showId") a show
+- `GET`(/shows?genre=horror) shows of a particular genre (genre in `req.query`)
 
 **Make sure to include your routers in a directory named `routes`**
 
